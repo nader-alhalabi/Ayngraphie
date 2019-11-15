@@ -1,0 +1,36 @@
+body{
+    background-color: black;
+
+    color: antiquewhite;
+    font-family: "Corbel Light";
+}
+h2{
+
+}
+.names{
+    text-align: right;
+}
+.subTitle {
+    color: firebrick;
+    text-align: center;
+    font-family: "Corbel Light";
+    font-weight: bold;
+    font-size: 30px;
+
+}
+h3{
+    padding: 50px;
+    padding-left: 20px;
+    border-style: solid;
+    margin: 60px;
+    border-width: thin;
+    border-color: gray;
+    text-align: left;
+    margin: 30px;
+
+
+}
+
+.img{
+    text-align: center;
+}

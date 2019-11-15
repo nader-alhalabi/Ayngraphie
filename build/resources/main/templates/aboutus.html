@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="css/aboutsStyle.css">
+</head>
+<body>
+<div class="WebsiteName">
+    <p th:text="'Hello, ' + ${name} + '!'"/>
+</div>
+
+<div class="names"> Project by: Nader Alhalabi
+    Mohamed Sadiq
+    Suheib Al-Khatib
+</div>
+<br>
+<h2>The time now is:</h2>
+<p th:text="${#dates.format(standardDate, 'dd-MM-yyyy HH:mm')}"></p>
+
+<div class="subTitle">User Persona:
+</div>
+
+<div class="img">
+    <img src="image1.jpg" alt="Mathias" height="300" width="300">
+</div>
+<p2>This is Adam
+    Demographics:
+    - he is 26 old
+    - has an arabic background
+    - born and raised in germany to a lebanese father
+
+    Behaviors:
+    - He is interested in his father's culture
+    - He likes to know more about arabic language
+    - He wants to express his arabic heritage
+
+    Needs/goals:
+    - he wants a simple shop for one-stop calligraphy merchandise
+    - he wants to shop for non-Latin t-shirts
+</p2>
+<div class="img">
+    <img src="lora.jpg" alt="Mathias" height="300" width="300">
+</div>
+<p2>This is Lora
+    Demographics:
+    -she is 46 old
+    -she is a german mother of 2
+
+    Behaviors:
+    -she is interested in meeting other cultures
+    -she met a lot of refugees and she is now wants to learn arabic
+    Needs/Goals:
+
+    -she wants to buy gifts for her relatives on christmas
+    -she wants reflect her interests for this culture and language
+    -she needs a webshop the supports german for ease of use</p2>
+</body>
+</html>
