@@ -6,7 +6,7 @@ Ayngraphie is a simple shop where you can buy unique arabic calligraphy merchand
 
 Done Implementations:
 - Authentication and Authorization Security
+- Cypress testing
 
 TODO:
-- Cypress testing
 - Data banks implementation
