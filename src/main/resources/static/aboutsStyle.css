@@ -5,10 +5,9 @@ body{
     font-family: "Corbel Light";
 }
 h2{
-
 }
 .names{
-    text-align: right;
+    text-align: left;
 }
 .subTitle {
     color: firebrick;
@@ -16,6 +15,7 @@ h2{
     font-family: "Corbel Light";
     font-weight: bold;
     font-size: 30px;
+    margin-bottom: 20px;
 
 }
 h3{
@@ -33,4 +33,12 @@ h3{
 
 .img{
     text-align: center;
+}
+.text{
+    width: 500px;
+    padding: 20px;
+    margin: 50px;
+    margin-left: 450px;
+    align-content: center;
+    border-style: solid;
 }
