@@ -1,4 +1,4 @@
-package de.htw.berlin.Ayngraphie;
+package de.htw.berlin.Ayngraphie.Controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -22,8 +22,5 @@ public class AboutusController {
         return "hello";
     }
 
-    @GetMapping("/admin")
-    public String admin() {
-        return "admin";
-    }
+
 }
