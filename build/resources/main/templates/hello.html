@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
       xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
-<ul class="navbar">
-    <li class="active"><a href="/"> Home </a></li>
-    <li><a href="aboutus">About us</a></li>
-    <li><a href="admin">Admin Panel</a></li>
-</ul>
+
 <head>
     <title>Hello World!</title>
+    <link rel="stylesheet" type="text/css" href="../static/aboutsStyle.css">
+    <link rel="stylesheet" type="text/css" href="../aboutsStyle.css">
+
 </head>
 <body>
 <h1 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h1>
-<form th:action="@{/logout}" method="post">
-    <input type="submit" value="Sign Out"/>
-</form>
+
+
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="aboutus">About us</a></li>
+        <li><a href="admin">Admin Panel</a></li>
+        <li>
+            <form th:action="@{/logout}" method="post">
+                <input type="submit" value="Sign Out"/>
+            </form>
+        </li>
+
+    </ul>
+</nav>
+
 </body>
 </html>

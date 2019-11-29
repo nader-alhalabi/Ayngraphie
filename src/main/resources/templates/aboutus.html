@@ -1,10 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
-<ul class="navbar">
-    <li class="active"><a href="/">Home</a></li>
-    <li><a href="aboutus">About us</a></li>
-    <li><a href="admin">Admin Panel</a></li>
-</ul>
+
 <head>
     <title>Getting Started: Serving Web Content</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -20,10 +16,34 @@
     Mohamed Sadiq
     Suheib Al-Khatib
 </div>
+
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="aboutus">About us</a></li>
+        <li><a href="admin">Admin Panel</a></li>
+        <form th:action="@{/logout}" method="post">
+            <input type="submit" value="Sign Out"/>
+        </form>
+
+    </ul>
+</nav>
+
 <br>
 <h2>The time now is:</h2>
-<p th:text="${#dates.format(standardDate, 'dd-MM-yyyy HH:mm')}"></p>
+<p th:text="${#dates.format(standardDate, 'dd.MM.yyyy HH:mm')}"></p>
 
+<div class="subTitle">Goals:
+<div class="text">
+
+    - To provide a web shop that offers clothes such as t-shirts with Arabic calligraphy. </br>
+    - To provide a plattform for people interested in Arabic calligraphy.</br>
+    - Possibility to add products with an admin account.</br>
+    - Availability in English, German and Arabic</br>
+    - Shopping cart that can view the added products</br>
+    - Checking out via credit card</br>
+
+</div>
 <div class="subTitle">User Persona:
 </div>
 
@@ -47,6 +67,7 @@
      - he wants a simple shop for one-stop calligraphy merchandise
      - he wants to shop for non-Latin t-shirts
  </div>
+
  <div class="img">
      <!--  <img src="../static/lora.jpg" alt="Mathias" height="300" width="300"> -->
       <img src="../lora.jpg" alt="Mathias" height="300" width="300">
